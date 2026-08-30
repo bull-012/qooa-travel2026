@@ -175,6 +175,16 @@
     border-radius: 999px; padding: 5px 14px; font-size: 12.5px; cursor: pointer; font-family: inherit;
   }
 
+  /* ---- privacy banner ---- */
+  .privacy {
+    display: flex; gap: 11px; align-items: flex-start;
+    margin: 20px 0 0; padding: 13px 16px;
+    background: var(--warn-soft); border: 1px solid var(--warn);
+    border-radius: var(--radius); font-size: 13px; line-height: 1.7;
+  }
+  .privacy .ico { font-size: 17px; line-height: 1.4; flex: none; }
+  .privacy strong { color: var(--warn); }
+
   footer { text-align: center; padding: 30px 16px 40px; color: var(--fg-mute); font-size: 12px; }
 </style>
 </head>
@@ -202,6 +212,13 @@
 </nav>
 
 <div class="wrap">
+
+<div class="privacy">
+  <span class="ico">🔒</span>
+  <span><strong>このページは誰でも見られる公開URLです。機密情報は一切載せていません。</strong><br>
+  航空券の予約番号・eチケット、宿の正確な住所と部屋番号・予約確認コード・スマートロックの解錠情報・Wi-Fi パスワード、個人の連絡先・口座情報は掲載していません。
+  これらは <strong>Airbnb / AirAsia MOVE の各アプリ</strong>と <strong>LINE グループのノート</strong>で確認してください。</span>
+</div>
 
 <!-- ============ 日程 ============ -->
 <section id="schedule">
@@ -677,10 +694,6 @@
       <li><strong>岩永さん</strong> — マレーシア在住。現地合流＆お店の手配</li>
     </ul>
     <p class="muted" style="margin-top:8px">日本発着は<strong>5名</strong>、現地在住の岩永さんが合流して<strong>宿泊は6名</strong>（両方の宿とも6名で変更済み）。</p>
-  </div>
-  <div class="note">
-    このページは公開URLです。<strong>航空券の予約番号・宿の正確な住所・予約確認コード・スマートロックの解錠情報・Wi-Fi パスワード・連絡先・口座情報は載せていません</strong>。
-    宿はエリアまでの記載にとどめています。載せていない情報は Airbnb アプリと LINE グループのノートで共有してください。
   </div>
 </section>
 
