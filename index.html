@@ -175,6 +175,16 @@
     border-radius: 999px; padding: 5px 14px; font-size: 12.5px; cursor: pointer; font-family: inherit;
   }
 
+  /* ---- alert ---- */
+  .alert {
+    margin: 14px 0 0; padding: 14px 16px;
+    background: color-mix(in srgb, var(--danger) 10%, var(--bg-card));
+    border: 1px solid var(--danger); border-radius: var(--radius);
+    font-size: 13.5px; line-height: 1.75;
+  }
+  .alert h3 { margin: 0 0 6px; font-size: 15.5px; color: var(--danger); }
+  .alert a { color: var(--danger); font-weight: 600; }
+
   /* ---- privacy banner ---- */
   .privacy {
     display: flex; gap: 11px; align-items: flex-start;
@@ -218,6 +228,20 @@
   <span><strong>このページは誰でも見られる公開URLです。機密情報は一切載せていません。</strong><br>
   航空券の予約番号・eチケット、宿の正確な住所と部屋番号・予約確認コード・スマートロックの解錠情報・Wi-Fi パスワード、個人の連絡先・口座情報は掲載していません。
   これらは <strong>Airbnb / AirAsia MOVE の各アプリ</strong>と <strong>LINE グループのノート</strong>で確認してください。</span>
+</div>
+
+<div class="alert">
+  <h3>😷 今年はヘイズ（煙害）が深刻です — N95マスクを必ず持参</h3>
+  <p style="margin:0 0 8px">2026年は 2015年以来の強いエルニーニョで乾季が長引き、インドネシアの野焼きの煙がマレーシア全土に流れ込んでいます。
+  <strong>8/28 時点でペナン（Minden 159 / Seberang Perai 158）も KL（Cheras 160）も API「不健康」水準</strong>。
+  専門家は、風向きが変わる<strong>10月頃まで続く可能性</strong>があるとしており、<strong>9/6〜9/11 の滞在は影響を受ける前提</strong>で準備してください。</p>
+  <ul class="plain" style="margin:0">
+    <li><strong>普通のマスクでは PM2.5 を防げません。N95 / KN95 / KF94 を人数分。</strong></li>
+    <li>目薬・のど飴・点鼻薬があると楽になります。呼吸器に持病がある人は普段の薬を多めに。</li>
+    <li>現地の空気の状況は <a href="https://www.iqair.com/air-quality/malaysia" target="_blank" rel="noopener">IQAir</a> や <a href="http://apims.doe.gov.my/" target="_blank" rel="noopener">APIMS（マレーシア環境局）</a>で毎日チェック。</li>
+    <li>API 150 超えの日は屋外の長時間活動を避け、合宿・食事を屋内寄りに。宿ではエアコンの外気導入をオフに。</li>
+  </ul>
+  <p class="muted" style="margin:8px 0 0">詳細は「現地情報」タブへ。数値は日ごとに大きく動くので、直前にもう一度確認してください。</p>
 </div>
 
 <!-- ============ 日程 ============ -->
@@ -503,6 +527,8 @@
     <label class="chk"><input type="checkbox" data-k="t6"><span class="txt">クレジットカードの海外利用制限・利用枠を確認（フェリーは現金不可）</span></label>
     <label class="chk"><input type="checkbox" data-k="t7"><span class="txt">AirAsia MOVE アプリで予約を紐づけ、オンラインチェックイン</span></label>
     <label class="chk"><input type="checkbox" data-k="t8"><span class="txt">Google マップでペナン／KL のオフライン地図をダウンロード</span></label>
+    <label class="chk"><input type="checkbox" data-k="t19"><span class="txt"><strong>N95 / KN95 マスクを人数分そろえる</strong>（ヘイズ対策・日本で買っていく方が確実）</span></label>
+    <label class="chk"><input type="checkbox" data-k="t20"><span class="txt"><a href="https://www.iqair.com/air-quality/malaysia" target="_blank" rel="noopener">IQAir</a> アプリを入れて、出発前からペナン・KL の API を眺めておく</span></label>
     <label class="chk"><input type="checkbox" data-k="t9"><span class="txt"><strong>海外旅行保険は各自の判断で</strong>。入りたい人は出発前に加入を。まずクレカ付帯（自動付帯／利用付帯）でカバーされるか確認し、足りなければネットで当日でも入れます</span></label>
     <label class="chk"><input type="checkbox" data-k="t17"><span class="txt"><strong>Visit Japan Web</strong> に登録して帰国時の税関申告QRを用意（<a href="https://www.vjw.digital.go.jp/" target="_blank" rel="noopener">公式</a>・任意だが羽田の税関がかなり速くなる）</span></label>
     <label class="chk"><input type="checkbox" data-k="t18"><span class="txt">パスポートのコピー／スマホに写真を保存（紛失時用）</span></label>
@@ -529,6 +555,7 @@
     <label class="chk"><input type="checkbox" data-k="p5"><span class="txt"><strong>変換プラグ（BFタイプ／英国式3穴）</strong>・電圧は240V</span></label>
     <label class="chk"><input type="checkbox" data-k="p6"><span class="txt">モバイルバッテリー ※<strong>受託手荷物に入れず機内持ち込み</strong></span></label>
     <label class="chk"><input type="checkbox" data-k="p7"><span class="txt">常備薬・処方薬（整腸剤は特に推奨）</span></label>
+    <label class="chk"><input type="checkbox" data-k="p9"><span class="txt"><strong>N95 / KN95 / KF94 マスク（日数分）</strong> — 今年はヘイズが深刻。普通のマスクでは PM2.5 を防げません。目薬・のど飴もあわせて</span></label>
     <label class="chk"><input type="checkbox" data-k="p8"><span class="txt"><strong>酔い止め</strong> — 9/8 の ETS は3.5時間あり、テーブル席だと半分が進行方向と逆向きになります。フェリーもあるので念のため持っておくと安心</span></label>
   </div>
 
@@ -647,6 +674,31 @@
       <li>KL 市内は LRT / MRT / モノレールが便利。Touch 'n Go カードがあるとスムーズ。</li>
       <li>KL Sentral ⇄ KLIA は <strong>KLIA Ekspres</strong> で約33分（RM55前後）。</li>
     </ul>
+  </div>
+
+  <h3>ヘイズ（煙害・大気汚染）</h3>
+  <div class="card">
+    <p style="margin-bottom:8px">インドネシアのスマトラ島・カリマンタン島で行われる野焼きの煙が、南西モンスーンに乗ってマレーシアに流れ込む現象です。例年8〜10月に集中しますが、<strong>2026年は 2015年以来の強いエルニーニョ</strong>で乾季が長期化し、火が消えにくくなっているため、ここ数年で最も深刻な年になっています。</p>
+    <ul class="plain">
+      <li><strong>API（大気汚染指数）の見方</strong>：0〜50 良好／51〜100 中程度／<strong>101〜200 不健康</strong>／201〜300 非常に不健康／301〜 危険。200 超で学校閉鎖の目安。</li>
+      <li><strong>8/28 時点の実測</strong>：ペナン Minden 159・Seberang Perai 158・Seberang Jaya 154、KL Cheras 160、全国19地点が「不健康」。</li>
+      <li><strong>見通し</strong>：マラヤ大学の気象学者は、風向きが変わる10月の季節風移行期まで改善しにくいとしています。<strong>滞在中も続いている可能性が高い</strong>です。</li>
+      <li><strong>症状</strong>：目のかゆみ、鼻水、喉の痛み、咳。焦げたような匂いがして、空が乳白色に霞み、太陽がオレンジ色にぼやけます。</li>
+    </ul>
+
+    <p style="margin:12px 0 6px"><strong>対策</strong></p>
+    <ul class="plain">
+      <li><strong>N95 / KN95 / KF94 マスク</strong>を日数分。サージカルマスクや布マスクでは PM2.5 を通してしまいます。</li>
+      <li>目薬・のど飴・点鼻薬。コンタクトの人は眼鏡も持っていくと楽です。</li>
+      <li>宿では窓を閉め、<strong>エアコンの外気導入をオフ</strong>に。</li>
+      <li>毎朝 <a href="https://www.iqair.com/air-quality/malaysia" target="_blank" rel="noopener">IQAir</a> か <a href="http://apims.doe.gov.my/" target="_blank" rel="noopener">APIMS</a> で数値を確認。<strong>API 150 超えの日は屋外の長時間活動を避ける</strong>判断を。</li>
+      <li>ペナンの宿は海沿いで景色が売りですが、ヘイズが濃い日は対岸が見えないこともあります。期待値は下げておきましょう。</li>
+      <li>呼吸器に持病のある人は、普段の薬を多めに。悪化した場合の医療機関は岩永さんに相談を。</li>
+    </ul>
+    <div class="note">
+      <strong>屋外メインの予定は、天候ではなく API を見て決めるのが今年のやり方です。</strong>
+      バトゥ洞窟やモスクなど屋外の観光は数値の良い日に寄せ、悪い日は合宿・モール・屋内の飯に振り替えるのが現実的です。
+    </div>
   </div>
 
   <h3>気候・服装</h3>
